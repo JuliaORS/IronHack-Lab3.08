@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Objects;
 
 @Entity
+@Inheritance(strategy=InheritanceType.JOINED)
 @Table(name = "event")
 public abstract class Event {
     @Id
@@ -79,7 +80,7 @@ public abstract class Event {
     }
 
     public void setTitle(String title) {
-        title = this.title;
+        this.title = title;
     }
 
     public List<Member> getGuest() {

@@ -14,8 +14,10 @@ public class Chapter {
     private Integer idChapter;
     private String name;
     private String district;
+    @ManyToOne
+    @JoinColumn(name="id_member")
     private Member president;
-    @OneToMany
+    @OneToMany(mappedBy = "chapter", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name="id_member")
     List<Member> members;
 
