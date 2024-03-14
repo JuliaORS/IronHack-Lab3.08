@@ -9,9 +9,6 @@ import java.util.List;
 @Table(name = "conference")
 public class Conference extends Event{
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer idConference;
     @ManyToMany
     @JoinTable(
             name = "conference_speaker",

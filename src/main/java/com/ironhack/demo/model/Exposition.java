@@ -16,8 +16,5 @@ public class Exposition extends Event{
         super(dateEvent, duration, location, title, guests);
     }
 
-    public Integer getIdExposition() {
-        return idExposition;
-    }
 
 }
