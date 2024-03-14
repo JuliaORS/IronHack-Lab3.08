@@ -7,9 +7,6 @@ import java.util.Objects;
 @Entity
 @Table(name = "speaker")
 public class Speaker {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer idSpeaker;
     private String name;
     private double presentationDuration;
 

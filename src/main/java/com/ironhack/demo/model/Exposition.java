@@ -9,9 +9,6 @@ import java.util.List;
 @PrimaryKeyJoinColumn(name="id")
 @Table(name = "exposition")
 public class Exposition extends Event{
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer idExposition;
 
     public Exposition(){}
 
